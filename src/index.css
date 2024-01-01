@@ -92,6 +92,7 @@ body {
 .box {
   width: 42rem;
   max-width: 42rem;
+  min-height: 5rem;
   background-color: var(--color-background-500);
   border-radius: 0.9rem;
   overflow: scroll;
@@ -455,12 +456,18 @@ body {
     position: relative;
   }
 
-  /* Ajustes para a lista de itens */
-  .list li {
-    grid-template-columns: 1fr;
-    padding: 1.6rem;
-    height: auto; /* Ajuste a altura para "auto" */
-  }
+  /* .list li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 2.4rem;
+    font-size: 1.6rem;
+    align-items: center;
+
+    padding: 1.6rem 3.2rem;
+    border-bottom: 1px solid var(--color-background-100);
+  } */
 
   .btn-delete {
     right: 1.6rem;
